@@ -47,7 +47,7 @@ const userSchema = new mongoose.Schema(
         }
       },
     },
-    //By deaful validate function do not run on updating existing data you have to enable it through options
+    //By deafult validate function do not run on updating existing data you have to enable it through options
     photoUrl: {
       type: String,
       default: "https://www.freepik.com/free-photos-vectors/user-profile",
