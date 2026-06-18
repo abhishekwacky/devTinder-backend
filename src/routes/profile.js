@@ -26,7 +26,7 @@ profileRouter.patch("/profile/edit", userAuth, async (req, res) => {
       data: loggedInUser,
     });
   } catch (err) {
-    res.status(400).send("You can't edit the profile");
+    res.status(400).send("ERROR :" + err.message);
   }
 });
 
